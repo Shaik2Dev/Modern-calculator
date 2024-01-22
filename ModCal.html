@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ModCal.css">
+    <title>Modern Calculator</title>
+</head>
+<body>
+    <div class="main_container">
+        <div class="container" id="calculator">
+            <span id="main_display">
+                <span id="display">
+                </span>
+            </span>
+            <div class="grid-cell grid-cell-clear" onclick="clearDisplay()">clear</div>
+            <div class="grid-cell grid-cell-backspace" onclick="backspace()">⌫</div>
+            <div class="grid-cell grid-cell-div" onclick="appendToDisplay('/')">/</div>
+            <div class="grid-cell grid-cell-mul" onclick="appendToDisplay('*')">*</div>
+            <div class="grid-cell grid-cell-7" onclick="appendToDisplay('7')">7</div>
+            <div class="grid-cell grid-cell-8" onclick="appendToDisplay('8')">8</div>
+            <div class="grid-cell grid-cell-9" onclick="appendToDisplay('9')">9</div>
+            <div class="grid-cell grid-cell-sub" onclick="appendToDisplay('-')">-</div>
+            <div class="grid-cell grid-cell-4" onclick="appendToDisplay('4')">4</div>
+            <div class="grid-cell grid-cell-5" onclick="appendToDisplay('5')">5</div>
+            <div class="grid-cell grid-cell-6" onclick="appendToDisplay('6')">6</div>
+            <div class="grid-cell grid-cell-add" onclick="appendToDisplay('+')">+</div>
+            <div class="grid-cell grid-cell-1" onclick="appendToDisplay('1')">1</div>
+            <div class="grid-cell grid-cell-2" onclick="appendToDisplay('2')">2</div>
+            <div class="grid-cell grid-cell-3" onclick="appendToDisplay('3')">3</div>
+            <div class="grid-cell grid-cell-0" onclick="appendToDisplay('0')">0</div>
+            <div class="grid-cell grid-cell-00" onclick="appendToDisplay('00')">00</div>
+            <div class="grid-cell grid-cell-dot" onclick="appendToDisplay('.')">.</div>
+            <div class="grid-cell grid-cell-equal" onclick="calculateResult()">=</div>
+        </div>
+    </div>
+</body>
+<script src="ModCal.js"></script>
+</html>
